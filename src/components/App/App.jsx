@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import GalleryList from '../GalleryList/GalleryList';
+import GalleryItem from '../GalleryItem/GalleryItem';
 
 function App() {
     return (
@@ -8,6 +12,8 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
+        <GalleryItem />
+        <GalleryList />
         <img src="images/goat_small.jpg"/>
       </div>
     );
