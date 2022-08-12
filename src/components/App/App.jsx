@@ -6,6 +6,24 @@ import GalleryList from '../GalleryList/GalleryList';
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 function App() {
+
+//on load, get items
+useEffect(() => {
+  getItems()
+}, [])
+
+//GET
+const getItems = () => {
+  axios.get('/items')
+  .then( response => {
+    setGalleryItem(response.data)
+  })
+  .catch(err => {
+    alert('error getting Gallery Items')
+    console.log(err)
+  }) 
+} //END GET
+
     return (
       <div className="App">
         <header className="App-header">
