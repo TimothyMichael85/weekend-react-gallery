@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-image: url(' https://hoxtonpark-h.schools.nsw.gov.au/content/dam/doe/sws/schools/h/hoxtonpark-h/news/2017/11/workshop.jpg');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;
 }
 
 .App-header {
